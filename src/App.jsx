@@ -58,7 +58,7 @@ class App extends React.Component {
 
   onButtonSubmit = () => {
     this.setState({imageUrl: this.state.input}, () => {
-        fetch('http://localhost:3005/imageurl', {
+        fetch('https://face-detection-app-api-fb7t.onrender.com/imageurl', {
           method: 'post',
           headers: {'Content-Type': 'application/json'},
           body: JSON.stringify({
@@ -68,7 +68,7 @@ class App extends React.Component {
         .then(response => response.json())
         .then(result => {
           if (result) {
-            fetch('http://localhost:3005/image', {
+            fetch('https://face-detection-app-api-fb7t.onrender.com/image', {
               method: 'put',
               headers: {'Content-Type': 'application/json'},
               body: JSON.stringify({
