@@ -1,0 +1,5 @@
+.button {
+    background: linear-gradient(300deg,#1271ff,#dd4aff,#64dcff,#c83232,#b4b432);
+    background-size: 420% 420%;
+    animation: gradient-animation 42s ease infinite;
+}

@@ -1,0 +1,28 @@
+.background {
+  background: linear-gradient(300deg,#6c00a2,#001152,#1271ff,#dd4aff,#64dcff,#c83232,#b4b432);
+  background-size: 420% 420%;
+  animation: gradient-animation 42s ease infinite;
+}
+
+@keyframes gradient-animation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.bounding-box {
+  position: absolute;
+  box-shadow: 0 0 0 3px #00B4B4 inset;
+  cursor: pointer;
+}
+
+.image-container {
+  position: relative;
+  display: inline-block;
+}
