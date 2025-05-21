@@ -25,7 +25,7 @@ class Register extends React.Component {
 
     onButtonSubmitRegister = () => {
         const {email, name, password} = this.state;
-        fetch('https://face-detection-app-api-fb7t.onrender.com/register', {
+        fetch('/api/register', {
             method: 'post',
             headers: {'Content-Type': 'application/json'},
             body: JSON.stringify({
