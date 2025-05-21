@@ -1,7 +1,7 @@
 import React from 'react';
 import './App.css'
 import Navigation from './components/Navigation/Navigation';
-import SignIn from './containers/Signin/Signin';
+import SignIn from './containers/SignIn/SignIn';
 import ImageLinkForm from './components/ImageLinkForm/ImageLinkForm';
 import Register from './containers/Register/Register';
 
